@@ -1,0 +1,22 @@
+(:om-lib
+
+(:version 0.001 )
+
+(:doc "INFINITY LIBRARY FOR OM AND OM#") 
+
+(:author "Paulo Henrique Raposo-2023")
+
+(:source-files "sources/package"
+	       "sources/infinity-functions"
+)
+
+ (:symbols 
+      (:packages
+            (:package
+		 (:name "INFINITY-SEIRES")
+			 (:functions "infinity::infinity-series" 
+				     "infinity::infinity-canons"))
+
+      )
+ )
+)

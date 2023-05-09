@@ -1,0 +1,145 @@
+
+(:patch
+ (:name "00-INTRODUCTION")
+ (:doc "")
+ (:info
+  (:created "2023/04/25 23:41:04")
+  (:modified "2023/04/25 23:43:14")
+  (:by "om-sharp")
+  (:version 1.07))
+ (:window (:size (869 429)) (:position (21 46)))
+ (:grid nil)
+ (:lock nil)
+ (:boxes
+  (:box
+   (:library "Infinity")
+   (:type :function)
+   (:reference (:symbol "INFINITY-SERIES" "INFINITY"))
+   (:group-id nil)
+   (:name "infinity-series")
+   (:x 68)
+   (:y 164)
+   (:w 113)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "MIDICS")
+     (:value (:list 6700 6800))
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "N")
+     (:value 4096)
+     (:reactive nil)))
+   (:outputs (:output (:name "out") (:reactive nil)))
+   (:id 0))
+  (:box
+   (:library "Infinity")
+   (:type :function)
+   (:reference (:symbol "INFINITY-CANONS" "INFINITY"))
+   (:group-id nil)
+   (:name "infinity-canons")
+   (:x 64)
+   (:y 215)
+   (:w 119)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "INFINITY-SERIES")
+     (:value
+      (:list
+       6700
+       6800
+       6600
+       6900
+       6800
+       6700
+       6500
+       7000
+       6600
+       6900
+       6700
+       6800))
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "out0") (:reactive nil))
+    (:output (:name "out1") (:reactive nil))
+    (:output (:name "out2") (:reactive nil))
+    (:output (:name "out3") (:reactive nil)))
+   (:id 1))
+  (:comment
+   (:x 66)
+   (:y 27)
+   (:w 745)
+   (:h 128)
+   (:fgcolor (:color 0 0 0 1.0))
+   (:bgcolor nil)
+   (:border 0)
+   (:roundness nil)
+   (:text-font (:font (:face "Verdana") (:size 12) (:style :plain)))
+   (:align nil)
+   (:text
+    "                                                 INFINITY LIBRARY FOR OM
+
+
+REFERENCES
+
+Per Norgard. INSIDE A SYMPHONY (1974)
+Available at: http://www5.kb.dk/export/sites/kb_dk/da/nb/dcm/udgivelser/norgard/artikler/InsideASymphony.1975.pdf
+")
+   (:id 2))
+  (:box
+   (:library "Infinity")
+   (:type :function)
+   (:reference (:symbol "INFINITY-RHYTHMS" "INFINITY"))
+   (:group-id nil)
+   (:name "infinity-rhythms")
+   (:x 64)
+   (:y 269)
+   (:w 125)
+   (:h 29)
+   (:color nil)
+   (:border nil)
+   (:roundness nil)
+   (:text-font nil)
+   (:align nil)
+   (:icon :left)
+   (:lock nil)
+   (:lambda nil)
+   (:reactive nil)
+   (:inputs
+    (:input
+     (:type :standard)
+     (:name "MIDICS")
+     (:value (:list 6700 6800 6600 6900 6800 6700 6500 7000))
+     (:reactive nil))
+    (:input
+     (:type :standard)
+     (:name "UNIT")
+     (:value 1/16)
+     (:reactive nil)))
+   (:outputs
+    (:output (:name "out0") (:reactive nil))
+    (:output (:name "out1") (:reactive nil)))
+   (:id 3)))
+ (:connections))
