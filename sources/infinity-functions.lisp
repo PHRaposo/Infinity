@@ -15,9 +15,9 @@
                    accumul)
            (- (nth (1+ counter) accumul)
                     (nth counter accumul)))))))
- (if (= (length partial-results) n-max)
-     (write partial-results)
-     (infinity-ser partial-results (1+ counter) n-max))))
+ (cond ((= (length partial-results) n-max) (write partial-results))
+           ((> (length partial-results) n-max) (om::first-n partial-results n-max))
+    (t (infinity-ser partial-results (1+ counter) n-max)))))
 
 (om::defmethod! infinity-series ((midics list) (n integer)) 
     :initvals '( (6700 6800) 4096)
